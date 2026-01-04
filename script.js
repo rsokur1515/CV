@@ -3,9 +3,9 @@
     'use strict';
     
     const LANGUAGE_KEY = 'resume_language';
-    const DEFAULT_LANGUAGE = 'ru';
+    const DEFAULT_LANGUAGE = 'en';
     
-    // Get current language from localStorage or default to 'ru'
+    // Get current language from localStorage or default to 'en'
     let currentLanguage = localStorage.getItem(LANGUAGE_KEY) || DEFAULT_LANGUAGE;
     
     // Initialize language on page load
