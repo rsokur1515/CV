@@ -135,9 +135,30 @@ body {
 }
 
 .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 15px;
     color: var(--sidebar-text);
     font-size: 0.9rem;
+}
+
+.contact-item a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: var(--sidebar-accent);
+    text-decoration: underline;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    opacity: 0.9;
 }
 
 /* Skills Section - IN LEFT SIDEBAR */
@@ -562,4 +583,24 @@ body {
         padding: 5px 10px;
         font-size: 0.7rem;
     }
+}
+
+/* Resume Update Date */
+.resume-update {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.update-text {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.update-date {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-left: 5px;
 }
